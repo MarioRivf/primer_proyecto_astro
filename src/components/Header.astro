@@ -1,4 +1,5 @@
 ---
+import HeaderButtom from "../components/HeaderButtom.astro";
 console.log('javascript')
 ---
 
@@ -11,4 +12,34 @@ console.log('javascript')
             Toda la informacion acerca de mi primera pagina en astro.
         </p>
     </div>
+
+    <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
+		<HeaderButtom href="/" class="text-white">
+            <svg slot="before" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+                <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+                <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+              </svg>
+            Ultimos lanzamientos
+        </HeaderButtom>
+		<HeaderButtom href="/about" class="text-white">
+            <svg slot="before" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M12 9h.01" />
+                <path d="M11 12h1v4h1" />
+              </svg>
+            Sobre el proyecto
+        </HeaderButtom>
+        <HeaderButtom href="/oldest" class="text-white">
+            <svg slot="before" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355" />
+                <path d="M12 7v5l3 3" />
+                <path d="M19 16l-2 3h4l-2 3" />
+              </svg>
+            Los mas viejos
+        </HeaderButtom>
+	</nav>
 </header>
